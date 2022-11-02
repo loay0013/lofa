@@ -33,19 +33,19 @@
 <body>
 <?php include "includes/nav.php"; ?>
 
-<div class="container-fluid hero justify-content-center row m-0">
-	<div class="col-md-6">
-		<div class="container justify-content-center d-flex flex-column">
-			<h1>LoFa Media</h1>
-			<div class="mt-3 d-flex">
-				<a class="btn knap-1 btn-primary bg-textFarve text-minFarve border-0" href="#" role="button">Omkring os</a>
-				<a class="btn knap-2 btn-primary text-minFarve border-0 ms-2" href="#" role="button">Hvad tilbyder vi?</a>
-			</div>
+<div class="container-fluid hero justify-content-center flex-md-row-reverse row m-0">
+	<div class="col-md-6 p-0">
+		<div class="container-fluid flex-sm-column d-flex hero-image img-fluid">
+			<img src="" alt="">
 		</div>
 	</div>
-	<div class="col-sm-12 col-md-6">
-		<div class="container-fluid d-flex hero-image img-fluid">
-			<img src="" alt="">
+	<div class="col-md-6 d-flex justify-content-center p-0">
+		<div class="container justify-content-center d-flex flex-column align-items-center align-items-md-start mx-0 w-100 p-0">
+			<h1>LoFa Media</h1>
+			<div class="mt-3 d-flex flex-column flex-md-row w-100">
+				<a class="btn knap-1 btn-primary bg-textFarve text-minFarve border-0 ps-md-5 pe-md-5" href="#" role="button">Om os</a>
+				<a class="btn knap-2 btn-primary text-minFarve border-0 mt-3 mt-md-0 ps-md-5 ms-md-2 pe-md-5" href="#" role="button">Hvad tilbyder vi?</a>
+			</div>
 		</div>
 	</div>
 </div>
