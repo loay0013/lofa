@@ -20,6 +20,9 @@
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
@@ -30,7 +33,22 @@
 <body>
 <?php include "includes/nav.php"; ?>
 
-
+<div class="container-fluid hero justify-content-center row m-0">
+	<div class="col-md-6">
+		<div class="container justify-content-center d-flex flex-column">
+			<h1>LoFa Media</h1>
+			<div class="mt-3 d-flex">
+				<a class="btn knap-1 btn-primary bg-textFarve text-minFarve border-0" href="#" role="button">Omkring os</a>
+				<a class="btn knap-2 btn-primary text-minFarve border-0 ms-2" href="#" role="button">Hvad tilbyder vi?</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6">
+		<div class="container-fluid d-flex hero-image img-fluid">
+			<img src="" alt="">
+		</div>
+	</div>
+</div>
 
 
 
