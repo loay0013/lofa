@@ -29,8 +29,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
-<body>
+<body class="bg-body-bg">
 <?php include "includes/nav.php"; ?>
 
 <div class="container-fluid hero justify-content-center flex-md-row-reverse row m-0">
