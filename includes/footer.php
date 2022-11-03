@@ -1,33 +1,83 @@
-<!-- Instruktion til webbrowser om at vi kører HTML5 -->
-<!DOCTYPE html>
+<footer>
+    <div class="col-12 col-md-12 row bg-textFarve m-0 pt-3 ">
+        <div class="col-md-4 d-flex flex-column  align-items-center  ">
+            <ul class="list-unstyled">
+                <li>
+                    <h3 class="text-light">
+                        Information
+                    </h3>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-light">
+                            info@lofamedia.dk
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-light">
+                            +45 55 55 55 55
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/" alt="">
+                    <img src="images/" alt="">
+                    <img src="images/" alt="">
+                </li>
 
-<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
-<html lang="da">
+            </ul>
+        </div>
+        <div class="col-md-4 d-flex flex-column  align-items-center  ">
+            <ul class="list-unstyled">
+                <li>
+                    <h3 class="text-light">
+                        Menu
+                    </h3>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-light">
+                            Home
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-light">
+                            Om os
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-light">
+                            Hvad tilbyder vi?
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none">
+                        <p class="text-light">
+                            Vores team
+                        </p>
+                    </a>
+                </li>
 
-<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
-<head>
-    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
-    <meta charset="utf-8">
+            </ul>
+        </div>
 
-    <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+        <div class="col-md-4 d-flex flex-column  align-items-center justify-content-around ">
+            <img class="w-50" src="images/LoFa-logo_overunder-white.svg">
 
-    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
-    <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
+            <form class="d-flex justify-content-center pb-3 pb-md-0 ">
+                <a href="#" class="text-decoration-none">
+                <button class="btn btn-primary text-light" type="submit">Kontakt os</button>
+                </a>
+            </form>
 
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+        </div>
 
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<!-- i <body> har man alt indhold på siden som brugeren kan se -->
-<body>
-
-<!-- Her skal sidens indhold ligge -->
-
-</body>
-</html>
+    </div>
+</footer>
