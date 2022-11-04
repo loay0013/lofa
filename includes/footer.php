@@ -1,5 +1,5 @@
 <footer>
-    <div class="col-12 col-md-12 row bg-textFarve m-0 pt-3 ">
+    <div class="col-12 col-md-12 row bg-textFarve m-0 pt-3 g-5 g-md-0 ">
         <div class="col-md-4 d-flex flex-column  align-items-center  ">
             <ul class="list-unstyled">
                 <li>
