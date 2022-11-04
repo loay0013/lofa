@@ -71,7 +71,7 @@
         <div class="col-md-4 d-flex flex-column  align-items-center justify-content-around ">
             <img class="w-50" src="images/LoFa-logo_overunder-white.svg">
 
-            <form class="d-flex justify-content-center pb-3 pb-md-0 ">
+            <form class="d-flex justify-content-center pb-3 pb-md-0 pt-3 ">
                 <a href="#" class="text-decoration-none">
                 <button class="btn btn-primary text-light" type="submit">Kontakt os</button>
                 </a>

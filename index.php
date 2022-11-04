@@ -18,8 +18,8 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -32,6 +32,7 @@
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body style="background-color:#FAFAFA">
+
 <?php include "includes/nav.php"; ?>
 
 <header class="container-fluid hero justify-content-center flex-md-row-reverse row m-0">
@@ -44,8 +45,8 @@
 		<div class="container justify-content-center d-flex flex-column align-items-center align-items-md-start mx-0 w-100 p-0 ps-md-5">
 			<h1>LoFa Media</h1>
 			<div class="mt-3 d-flex flex-column flex-md-row w-100">
-                <a class="knap-1 btn-primary bg-textFarve text-minFarve border-0 ps-md-5 pe-md-5 text-decoration-none" href="#" > <p class="text-center m-0 text-decoration-none">Om os</p></a>
-                <a class="knap-2 btn-primary text-minFarve border-0 mt-3 mt-md-0 ps-md-5 ms-md-2 pe-md-5 text-decoration-none" href="#"> <p class="text-center m-0 text-decoration-none">Hvad tilbyder vi?</p></a>
+                <a class="knap-1 btn-primary bg-textFarve text-minFarve border-0 ps-md-5 pe-md-5 text-decoration-none" href="#omos" > <p class="text-center m-0 text-decoration-none">Om os</p></a>
+                <a class="knap-2 btn-primary text-minFarve border-0 mt-3 mt-md-0 ps-md-5 ms-md-2 pe-md-5 text-decoration-none" href="#Tilbyder"> <p class="text-center m-0 text-decoration-none">Hvad tilbyder vi?</p></a>
 			</div>
 		</div>
 	</div>
@@ -59,26 +60,43 @@
 
         </div>
 
-        <div class="col-md-6 col-12 d-flex flex-column order-md-2 order-1">
+        <div id="omos" class="col-md-6 col-12 d-flex flex-column order-md-2 order-1">
             <h2 class="text-center text-md-start">
                Om Os
             </h2>
 
             <p class="pt-4 text-1 ps-4  ps-md-0">
-                Vi er et nyetableret multimedie bureau, som er til for at hjælpe dig med at fremme dit navn på markedet!
-                Vi er specialiseret i SoMe marketing, front-end web development og innovativt design. Så uanset om du synes du mangler at optimere din SoMe strategi, din UX, eller lige har startet din egen virksomhed, så er det os der kan hjælpe dig.
-                Vi har alle en passion for at give dig, og dine kunder, den bedste digitale oplevelse. Derfor kan vi slet ikke vente med hjælpe lige netop dig med dit næste projekt.
+                Vi er et nyetableret multimedie-bureau, som er til for at hjælpe dig med at fremme dit navn på markedet!
+                Vi er specialiserede i SoMe-marketing, front-end webudvikling og innovativt design. Så uanset om du synes, du mangler at optimere din SoMe-strategi, din UX eller lige har startet din egen virksomhed, så er det os, der kan hjælpe dig.
+                Vi har alle en passion for at give dig og dine kunder den bedste digitale oplevelse. Derfor kan vi slet ikke vente med hjælpe lige netop dig med dit næste projekt.
                 <br><br>
-                <strong>Så tøv endeligt ikke med at kontakte os!</strong>
+                <strong>Så tøv endelig ikke med at kontakte os!</strong>
 
             </p>
 
             <div class="pt-4 ps-4 ps-md-0">
-                <form class="d-flex  pb-3 pb-md-0 ">
-                    <a href="#" class="text-decoration-none">
-                        <button class="btn btn-primary text-light" type="submit">Kontakt os</button>
-                    </a>
-                </form>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -92,10 +110,10 @@
 
 
 <section class="pt-5">
-    <div class="col-12 col-md-12 row m-0">
+    <div id="Tilbyder" class="col-12 col-md-12 row m-0">
         <div class="col-md-6 col-12 ">
 
-            <h3 class="ps-5 text-md-start text-center">
+            <h3 class="ps-md-5 text-md-start text-center">
                 Hvad tilbyder vi?
             </h3>
 
@@ -103,7 +121,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
                         <p>
-                            UI & UX
+                            Visuel identitet
                         </p>
                     </svg>
 
@@ -115,34 +133,34 @@
                         <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
                     </svg>
                     <p>
-                        Skræddersyet websites
-                    </p>
-
-                </div>
-                <div class="d-flex ps-5 pt-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
-                    </svg>
-                    <p>
-                        Content creation
-                    </p>
-
-                </div>
-                <div class="d-flex ps-5 pt-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
-                    </svg>
-                    <p>
                         Grafisk design
                     </p>
 
                 </div>
+                <div class="d-flex ps-5 pt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
+                    </svg>
+                    <p>
+                        Tryksager
+                    </p>
+
+                </div>
+                <div class="d-flex ps-5 pt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
+                    </svg>
+                    <p>
+                        SoMe strategi
+                    </p>
+
+                </div>
                 <div class="d-flex ps-5 pt-3" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
                     </svg>
                     <p>
-                        SoMe management
+                        UI & UX
                     </p>
 
                 </div>
@@ -152,7 +170,7 @@
                         <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M24.563,12.563a12,12,0,1,1-12-12A12,12,0,0,1,24.563,12.563ZM11.174,18.916l8.9-8.9a.774.774,0,0,0,0-1.095L18.983,7.823a.774.774,0,0,0-1.095,0l-7.261,7.261-3.39-3.39a.774.774,0,0,0-1.095,0L5.047,12.789a.774.774,0,0,0,0,1.095l5.032,5.032a.774.774,0,0,0,1.095,0Z" transform="translate(-0.563 -0.563)" fill="#44c471"/>
                     </svg>
                     <p>
-                        Brand indenity & design
+                        Hjemmesider
                     </p>
 
                 </div>
@@ -166,27 +184,27 @@
 
         <div class="col-md-6 row p-0 col-12 pt-5 m-0">
             <div class="p-3 col-md-6 col-6">
-            <img class="img3  p-0  " src="images/billede1.jpg">
+            <img class="img3  p-0  " src="images/billede1.jpg" alt="">
             </div>
             <div class="p-3 col-md-6 col-6">
-            <img class="img3  p-0" src="images/billede2.jpg">
+            <img class="img3  p-0" src="images/billede2.jpg" alt="">
             </div>
         </div>
 
     </div>
 </section>
 <section class="container pt-5">
-    <h2 class="text-center pb-3">
+    <h2 id="team" class="text-center pb-3">
         Vores team
     </h2>
     <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/M.JPG" alt="">
                 <div>
                     <p>Mikkel Johnsen</p>
-                    <p>mikkel.lebedev@gmail.dk</p>
-                    <h5>Web Developer</h5>
+                    <p>mikkel.lebedev@gmail.com</p>
+                    <h5>Front-end webudvikling</h5>
                 </div>
 
                 <div>
@@ -210,11 +228,11 @@
 
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/L.JPG">
+                <img class="img-card" src="images/L.JPG" alt="">
                 <div>
                     <p>Loay Hajjo</p>
-                    <p>Louy.hajjo21@gmail.com</p>
-                    <h5>Web Developer</h5>
+                    <p>louy.hajjo21@gmail.com</p>
+                    <h5>Front-end webudvikling</h5>
                 </div>
 
                 <div>
@@ -234,13 +252,14 @@
                     </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/A.JPG">
+                <img class="img-card" src="images/A.JPG" alt="">
                 <div>
                     <p>Amanda Keis</p>
                     <p>amandakeis@outlook.dk</p>
-                    <h5>Grafisk design, kommunikation & SoMe</h5>
+                    <h5>Grafisk design, komm. & SoMe</h5>
                 </div>
 
                 <div>
@@ -260,13 +279,14 @@
                     </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/SI.JPG">
+                <img class="img-card" src="images/SI.JPG" alt="">
                 <div>
                     <p>Sidney Goojvin</p>
                     <p>sidgoo99@gmail.com</p>
-                    <h5>Projektleder, Grafisk designer</h5>
+                    <h5>Projektleder & grafisk design</h5>
                 </div>
 
                 <div>
@@ -286,16 +306,18 @@
                     </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/NI.JPG" alt="">
                 <div>
                     <p>Nikita Wulff-Høyer</p>
-                    <p></p>
-                    <h2>SoMe, Grafisk designer</h2>
+                    <p>nikitawulff@icloud.com</p>
+                    <h5>SoMe & grafisk design</h5>
                 </div>
 
                 <div>
+                    <a href="https://www.linkedin.com/in/nikita-wulff-høyer-573170245?originalSubdomain=dk">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.446" height="32.446" viewBox="0 0 32.446 32.446">
                         <g id="Group_25" data-name="Group 25" transform="translate(-5 -0.999)">
                             <g id="Group_41" data-name="Group 41" transform="translate(5 -1)">
@@ -308,18 +330,21 @@
                             </g>
                         </g>
                     </svg>
+                    </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/T.JPG" alt="">
                 <div>
-                    <p>Mikkel Johnsen</p>
-                    <p>mikkel.lebedev@gmail.dk</p>
-                    <h2>Web Developer</h2>
+                    <p>Tommy Nguyen</p>
+                    <p>kontakt@tommynguyen.dk</p>
+                    <h5>Film fotograf</h5>
                 </div>
 
                 <div>
+                    <a href="https://www.linkedin.com/in/tommtollia">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.446" height="32.446" viewBox="0 0 32.446 32.446">
                         <g id="Group_25" data-name="Group 25" transform="translate(-5 -0.999)">
                             <g id="Group_41" data-name="Group 41" transform="translate(5 -1)">
@@ -332,18 +357,21 @@
                             </g>
                         </g>
                     </svg>
+                    </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/N.JPG" alt="">
                 <div>
-                    <p>Mikkel Johnsen</p>
-                    <p>mikkel.lebedev@gmail.dk</p>
-                    <h2>Web Developer</h2>
+                    <p>Nicoline Hansen </p>
+                    <p>0102nch@gmail.com</p>
+                    <h5>SoMe & grafisk design</h5>
                 </div>
 
                 <div>
+                    <a href="https://www.linkedin.com/in/nicoline-hansen-46a298b4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.446" height="32.446" viewBox="0 0 32.446 32.446">
                         <g id="Group_25" data-name="Group 25" transform="translate(-5 -0.999)">
                             <g id="Group_41" data-name="Group 41" transform="translate(5 -1)">
@@ -356,18 +384,21 @@
                             </g>
                         </g>
                     </svg>
+                    </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/S.JPG">
                 <div>
-                    <p>Mikkel Johnsen</p>
-                    <p>mikkel.lebedev@gmail.dk</p>
-                    <h2>Web Developer</h2>
+                    <p>Sita Shemesh</p>
+                    <p>shemesh@outlook.dk</p>
+                    <h5>Grafisk design</h5>
                 </div>
 
                 <div>
+                    <a href="https://www.linkedin.com/mwlite/in/sita-shemesh-7075ab204">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.446" height="32.446" viewBox="0 0 32.446 32.446">
                         <g id="Group_25" data-name="Group 25" transform="translate(-5 -0.999)">
                             <g id="Group_41" data-name="Group 41" transform="translate(5 -1)">
@@ -380,15 +411,17 @@
                             </g>
                         </g>
                     </svg>
+                    </a>
                 </div>
             </div>
-        </div>     <div class="col-lg-4 col-md-6 col-sm-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/">
                 <div>
-                    <p>Mikkel Johnsen</p>
-                    <p>mikkel.lebedev@gmail.dk</p>
-                    <h2>Web Developer</h2>
+                    <p>Kevin Pedersen</p>
+                    <p>kevi1297@edu.zealand.dk</p>
+                    <h5>Front-end webudvikling</h5>
                 </div>
 
                 <div>
@@ -409,14 +442,15 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="profile-card bg-white shadow mb-4 text-center rounded-lg p-4 d-flex flex-column align-items-center  ">
-                <img class="img-card" src="images/M.JPG">
+                <img class="img-card" src="images/F.JPG">
                 <div>
-                    <p class="pt-3">Mikkel Johnsen</p>
-                    <p>mikkel.lebedev@gmail.dk</p>
-                    <h3 class="pt-3">Web Developer</h3>
+                    <p class="pt-3">Freja A. H. Rose</p>
+                    <p>contact@sweetartdesign.dk</p>
+                    <h5 class="pt-3">Komm. & grafisk design</h5>
                 </div>
 
                 <div class="pt-2">
+                    <a href="https://www.linkedin.com/in/freja-rose-283488249/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.446" height="32.446" viewBox="0 0 32.446 32.446">
                         <g id="Group_25" data-name="Group 25" transform="translate(-5 -0.999)">
                             <g id="Group_41" data-name="Group 41" transform="translate(5 -1)">
@@ -429,30 +463,16 @@
                             </g>
                         </g>
                     </svg>
+                    </a>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
 
 </section>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-
+<script src="js/Kontaktos.js"></script>
 <?php include "includes/footer.php"; ?>
 
 </body>
