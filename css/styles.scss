@@ -66,8 +66,6 @@ a{
 	width: 75%;
 }
 .img2{
-	height: 370px;
-	width: 525px;
 	border-radius: 24px;
 	border: solid 0.5px #6c757d;
 	object-fit: cover;
@@ -80,8 +78,8 @@ a{
 }
 
 .img3{
-	width: 310px;
-	height: 310px;
+	height: 100%;
+	width: 100%;
 	border-radius: 24px;
 	border: solid 0.5px #6c757d;
 	object-fit: cover;
@@ -98,4 +96,16 @@ a{
 	border: solid #B2B2B2 0.5px ;
 	border-radius: 20px ;
 	box-shadow: 0 3px 18px;
+}
+
+@media screen and (max-width: 768px){
+	.img2{
+		height:100%;
+		width: 100%;
+		border-radius: 24px;
+		border: solid 0.5px #6c757d;
+		object-fit: cover;
+		box-shadow: 0 3px 22px rgba(0,0,0,5%);
+
+	}
 }
